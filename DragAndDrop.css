@@ -1,0 +1,106 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f8ff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #4caf50;
+}
+
+p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Game Container */
+.game-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+/* Draggable and Droppable Containers */
+.draggable-container, .droppable-container {
+    width: 45%;
+    padding: 20px;
+    background: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+/* Draggable Items */
+.item {
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+    background: #81c784;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: grab;
+}
+
+.item:active {
+    transform: scale(1.1);
+}
+
+/* Drop Zones */
+.dropzone {
+    width: 80%;
+    margin: 10px auto;
+    padding: 15px;
+    background: #f9f9f9;
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    text-align: center;
+    color: #666;
+    transition: background 0.3s, border-color 0.3s;
+}
+
+.dropzone:hover {
+    background: #e0f7fa;
+    border-color: #007bff;
+}
+
+/* Scoreboard */
+.scoreboard {
+    margin-top: 20px;
+    padding: 15px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.scoreboard p {
+    font-size: 1.2rem;
+    color: #4caf50;
+}
+
+#score {
+    font-size: 1.5rem;
+    color: #007bff;
+}

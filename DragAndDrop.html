@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop Game</title>
+    <link rel="stylesheet" href="DragAndDrop.css">
+    <script src="DragAndDrop.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Drag and Drop Game</h1>
+        <p>Match the items to their correct categories by dragging and dropping them!</p>
+    </header>
+    <div class="game-container">
+        <!-- Draggable Items Section -->
+        <div class="draggable-container">
+            <h2>Items</h2>
+            <div class="item" draggable="true" id="apple">Apple</div>
+            <div class="item" draggable="true" id="banana">Banana</div>
+            <div class="item" draggable="true" id="carrot">Carrot</div>
+            <div class="item" draggable="true" id="broccoli">Broccoli</div>
+            <div class="item" draggable="true" id="grape">Grape</div>
+            <div class="item" draggable="true" id="orange">Orange</div>
+            <div class="item" draggable="true" id="potato">Potato</div>
+            <div class="item" draggable="true" id="spinach">Spinach</div>
+            <div class="item" draggable="true" id="watermelon">Watermelon</div>
+            <div class="item" draggable="true" id="cucumber">Cucumber</div>
+        </div>
+
+        <!-- Drop Zones Section -->
+        <div class="droppable-container">
+            <h2>Categories</h2>
+            <div class="dropzone" data-match="apple">Fruit</div>
+            <div class="dropzone" data-match="banana">Fruit</div>
+            <div class="dropzone" data-match="grape">Fruit</div>
+            <div class="dropzone" data-match="orange">Fruit</div>
+            <div class="dropzone" data-match="watermelon">Fruit</div>
+            <div class="dropzone" data-match="carrot">Vegetable</div>
+            <div class="dropzone" data-match="broccoli">Vegetable</div>
+            <div class="dropzone" data-match="potato">Vegetable</div>
+            <div class="dropzone" data-match="spinach">Vegetable</div>
+            <div class="dropzone" data-match="cucumber">Vegetable</div>
+        </div>
+    </div>
+
+    <!-- Scoreboard -->
+    <div class="scoreboard">
+        <p>Score: <span id="score">0</span></p>
+        <p id="status">Start dragging items!</p>
+    </div>
+</body>
+</html>
